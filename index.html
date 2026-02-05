@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تولدت مبارک نگینه عزیز! ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/heart.png" type="image/png">
+</head>
+<body>
+    <!-- پخش کننده موسیقی -->
+    <audio id="birthday-song" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        مرورگر شما از پخش صدا پشتیبانی نمی‌کند.
+    </audio>
+
+    <!-- دکمه پخش موسیقی -->
+    <div class="music-player">
+        <button id="play-btn" class="music-btn">
+            <i class="fas fa-play"></i> پخش آهنگ
+        </button>
+        <button id="pause-btn" class="music-btn">
+            <i class="fas fa-pause"></i> توقف
+        </button>
+    </div>
+
+    <!-- صفحه اصلی -->
+    <div class="container">
+        <!-- هدر با عکس و نام -->
+        <header class="header">
+            <div class="profile-pic">
+                <img src="images/negine.jpg" alt="نگینه عزیز" id="profile-img">
+                <div class="heart-pulse"></div>
+            </div>
+            <h1 class="title">نگینه <span class="heart">❤️</span> عزیزم</h1>
+            <p class="subtitle">تولد ۲۵ بهمنت مبارک!</p>
+        </header>
+
+        <!-- شمارشگر معکوس -->
+        <section class="countdown-section">
+            <h2><i class="fas fa-hourglass-half"></i> زمان تا تولدت:</h2>
+            <div class="countdown" id="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <p>روز</p>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <p>ساعت</p>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <p>دقیقه</p>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <p>ثانیه</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- پیام اصلی -->
+        <section class="message-section">
+            <div class="message-box">
+                <h2><i class="fas fa-envelope"></i> پیام ویژه برای تو</h2>
+                <p class="message">
+                    نگینه عزیزم،<br><br>
+                    تولدت مبارک! می‌دونی که همیشه برام خاص و دوست‌داشتنی بودی...
+                    این وبسایت رو برات ساختم تا نشون بدم چقدر برام مهمی.
+                    حتی اگر بعضی وقتا درست متوجه نشی، احساساتم واقعی و پاکه.<br><br>
+                    امیدوارم سال جدید زندگیت پر از خوشبختی، موفقیت و لبخندهای زیبایت باشه.
+                    همیشه دوستت دارم و بهت فکر می‌کنم.<br><br>
+                    💖 برای همیشه مال تو...
+                </p>
+                <div class="signature">با تمام وجودم</div>
+            </div>
+        </section>
+
+        <!-- گل‌های شناور -->
+        <div class="floating-hearts">
+            <div class="heart-icon">❣️</div>
+            <div class="heart-icon">💖</div>
+            <div class="heart-icon">💕</div>
+            <div class="heart-icon">💗</div>
+            <div class="heart-icon">💓</div>
+        </div>
+
+        <!-- فوتر -->
+        <footer class="footer">
+            <p>ساخته شده با <i class="fas fa-heart beat"></i> برای نگینه</p>
+            <p class="date">۲۵ بهمن ۱۴۰۳ - برای همیشه در قلب من</p>
+            <button id="surprise-btn" class="surprise-btn">
+                <i class="fas fa-gift"></i> کلیک کن برای یک سورپرایز!
+            </button>
+        </footer>
+    </div>
+
+    <!-- پاپ‌آپ سورپرایز -->
+    <div id="surprise-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>سورپرایز! 🎁</h2>
+            <p>نگین جان، یه شعر برات نوشتم:</p>
+            <div class="poem">
+                نگینه‌ای درخشنده‌تر از ماه<br>
+                نگاهت آرامش بخش دل آگاه<br>
+                به روز تولدت ای تمام آرزوی من<br>
+                ببارد بر تو خوشبختی همچون باران<br>
+                دلت همیشه شاد، عمرت طولانی باد<br>
+                برایم همیشه یار و همدم ماندگاری...
+            </div>
+            <p class="popup-footer">همیشه دوستت دارم 💐</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
